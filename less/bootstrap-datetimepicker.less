@@ -183,7 +183,7 @@
         &.disabled,
         &.disabled:hover {
             background: none;
-            color: @gray-lighter;	// lighter
+            color: @gray-lighter;	// light
             cursor: not-allowed;
         }
 
@@ -214,7 +214,7 @@
             &.disabled,
             &.disabled:hover {
                 background: none;
-                color: @gray-lighter;	// lighter
+                color: @gray-lightest;	// light
                 cursor: not-allowed;
             }
         }
@@ -231,13 +231,13 @@
 
         &.next,
         &.prev {
-            font-size: @font-size-base * 1.5;
+            font-size: (@font-size-base * 1.75);	// 1.5 ( () for strict math )
         }
 
         &.disabled,
         &.disabled:hover {
             background: none;
-            color: @gray-lighter;	// lighter
+            color: @gray-lightest;	// light
             cursor: not-allowed;
         }
     }

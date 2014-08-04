@@ -1186,8 +1186,6 @@ footer {
 
 // zagykazetta +
 
-@import "bootstrap-datetimepicker.less";
-
 .row-filter {
 	label {
 		display: block;
@@ -1208,8 +1206,10 @@ footer {
 	.input-sm { height: 37px; }
 	.input-group, .form-group { margin: 0; padding: 0; }
 	.form-inline .form-control { width: 100%; }
-	.form-group { width: 68%; }
-	.form-group:first-child { width: 30%; }
+	.form-group { width: 65%; }
+	.form-group:first-child { width: 30%; 
+		select { padding-left: 0; padding-right: 0; }
+	}
 }
 // tables
 th { color: @gray-light; 
@@ -1222,3 +1222,5 @@ th { color: @gray-light;
 	.row-summa { font-weight: 700; }
 	background-color: white;
 }
+
+@import "bootstrap-datetimepicker.less";
