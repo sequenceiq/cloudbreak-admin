@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- <link rel="shortcut icon" href="img/ico/favicon.ico"> -->
+
+		<title>Zagykazetta</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
+
+		<link href="css/zagykazetta.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body id="page-home">
+		
+		<div class="fill-bg">
+  		<img src="img/bg-login-page.jpg" alt="">
+		</div>
+		
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+					<img src="img/logo.png" alt="logo">
+					</div>
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</header>
+			
+		<section>
+				<div class="container carousel slide">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							
+							<div class="panel panel-dark-transparent center-block">
+								<div class="panel-heading">
+									<h1 class="panel-title" >zagykazetta</h1>
+								</div>
+								<div class="panel-body">
+								
+									<div class="carousel-inner">
+
+<!-- ............... SELECTOR ............................................. -->
+																		
+										<div class="item active">
+
+											<!-- <p><a href="#" id="select-signup-btn" class="btn btn-info btn-block" role="button"><i class="fa fa-user fa-fw"></i> sign up</a></p> -->
+											<a href="#" id="select-login-btn" class="btn btn-info btn-block" role="button"><i class="fa fa-sign-in fa-fw"></i> login</a>
+										
+										</div><!-- .item -->
+									
+<!-- ............... LOGIN ................................................ -->
+
+										<div class="item">
+
+											<form role="form" autocomplete="on">
+
+												<div class="form-group"><!-- OPTIONAL HTML:
+													class: 'has-feedback' - got validation result AND
+													class: 'has-error' – error OR
+													class: 'has-success' - ok
+													-->
+													<label class="sr-only" for="emailFieldLogin">email</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+														<input class="form-control" type="email" id="emailFieldLogin" placeholder="email" required>
+                            <!-- OPTIONAL HTML: (only for textfields)
+														<i class="fa fa-warning form-control-feedback"></i>
+															- validation error OR
+														<i class="fa fa-check form-control-feedback"></i>
+															- validation ok
+														-->
+													</div><!-- .input-group -->
+													<!-- OPTIONAL HTML: 
+													<span class="help-block">Invalid email address</span>
+														- inline validation error message
+													-->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="passwFieldLogin">password</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+														<input class="form-control" type="password" id="passwFieldLogin" placeholder="password" required>
+													</div><!-- .input-group -->
+													<p class="text-right"><a href="#" id="login-forgot-passw"><i class="fa fa-question-circle fa-fw"></i> forgot my password</a></p>
+												</div><!-- .form-group -->
+												<a href="#" id="login-btn" class="btn btn-info btn-block" role="button"><i class="fa fa-sign-in fa-fw"></i> login</a>
+												<a href="#" id="forgot-btn" class="btn btn-info btn-block hidden" role="button"><i class='fa fa-paper-plane fa-fw'></i> get password reset email</a>
+												<a href="#" id="login-back-btn" class="btn btn-default btn-block" role="button"><i class="fa fa-angle-left fa-fw"></i> cancel</a>
+											</form>
+								
+										</div><!-- .item -->
+								
+<!-- ............... SIGN UP .............................................. -->
+
+										<div class="item">
+
+											<form role="form" autocomplete="on">
+
+												<div class="form-group">
+													<label class="sr-only" for="emailFieldLogin">email</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+														<input class="form-control" type="email" id="emailFieldLogin" placeholder="email" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="passwFieldLogin">password</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+														<input class="form-control" type="password" id="passwFieldLogin" placeholder="password" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="passw2FieldLogin">repeat password</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+														<input class="form-control" type="password" id="passw2FieldLogin" placeholder="repeat password" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="firstNameFieldLogin">first name</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
+														<input class="form-control" type="text" id="firstNameFieldLogin" placeholder="first name" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="lastNameFieldLogin">last name</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
+														<input class="form-control" type="text" id="lastNameFieldLogin" placeholder="last name" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="companyFieldLogin">company</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-institution fa-fw"></i></span>
+														<input class="form-control" type="text" id="companyFieldLogin" placeholder="company" required>
+													</div><!-- .input-group -->
+													<div class="checkbox checkbox-attached hidden">
+															<label>
+																<input type="checkbox"> I am this company's admin
+															</label>
+														</div>
+												</div><!-- .form-group -->
+												
+												<a href="#" id="signup-btn" class="btn btn-info btn-block" role="button"><i class="fa fa-user fa-fw"></i> sign up</a>
+												<a href="#" id="signup-back-btn" class="btn btn-default btn-block" role="button"><i class="fa fa-angle-left fa-fw"></i> cancel</a>
+
+											</form>
+
+										</div><!-- .item -->
+										
+										<!-- SIGN UP MESSAGE .................................. -->
+										
+										<div class="item">
+										
+											<h5>We've sent a verification email to the <strong>name@company.com</strong> address.</h5>
+										
+										</div><!-- .item -->
+										
+<!-- ............... FORGOTTEN PASSWORD ................................... -->
+										
+										<!-- MESSAGE .......................................... -->
+
+										<div class="item">
+
+											<h5>We've sent a verification/password reset email to the <strong>name@company.com</strong> address.</h5>
+											<p><a href="#" id="fake-reset-email-link">fake email link</a></p>
+
+										</div><!-- .item -->
+										
+										<!-- RESET PASSWORD .................................... -->
+
+										<div class="item">
+
+											<form role="form" autocomplete="on">
+
+												<div class="form-group">
+													<label class="sr-only" for="passwFieldLogin">new password</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+														<input class="form-control" type="password" id="passwFieldLogin" placeholder="new password" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+												<div class="form-group">
+													<label class="sr-only" for="passw2FieldLogin">repeat password</label>
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
+														<input class="form-control" type="password" id="passw2FieldLogin" placeholder="repeat password" required>
+													</div><!-- .input-group -->
+												</div><!-- .form-group -->
+
+												<a href="#" id="setpassw-btn" class="btn btn-info btn-block" role="button"><i class="fa fa-lock fa-fw"></i> set new password</a>
+
+											</form>
+
+
+										</div><!-- .item -->								
+								
+									</div><!-- .carousel-inner -->
+								
+								</div><!-- .panel-body -->							
+							</div><!-- .panel-transp" -->		
+							
+						</div><!-- .col-sm-8 --> 
+					</div><!-- .row -->
+				</div><!-- .container -->
+		</section>
+
+		
+  	
+  	<!-- JS load -->
+    <script src="js/lib/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/lib/retina.min.js" type="text/javascript"></script>
+
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// Bootstrap carousel as selector / login / sign up slider
+				// init
+				$('.carousel').carousel('pause');	
+				$('#select-login-btn').click(function () {
+					$('.carousel').carousel(1);
+				});
+				// forgotten login password
+				$('#login-forgot-passw').click(function (e) {
+					$( this ).css( "visibility", "hidden" );
+					$( '#passwFieldLogin' ).prop( "disabled", "true" );
+					$( '#login-btn' ).addClass('hidden');
+					$( '#forgot-btn' ).removeClass('hidden');
+					$('#forgot-btn').click(function (e) {
+						$('.carousel').carousel(4);
+						e.preventDefault();
+					});
+					e.preventDefault();
+				});
+				// company admin
+				$('#companyFieldLogin').focus(function () {
+						$(this).parent().parent().find('.checkbox').removeClass('hidden');
+				});
+				$('#companyFieldLogin').blur(function () {
+					if ($(this).val() != "") {
+						$(this).parent().parent().find('.checkbox').removeClass('hidden');
+					} else {
+						$(this).parent().parent().find('.checkbox').addClass('hidden');
+					}
+				});
+				// triggers
+				$('#setpassw-btn').click(function () {
+					window.location.href = "console.html";
+				});
+				// fake login
+				$('#login-btn').click(function () {
+					window.location.href = "console.html";
+				});
+				$('#login-back-btn').click(function () {
+					$('.carousel').carousel(0);
+				});
+				$('#select-signup-btn').click(function () {
+					$('.carousel').carousel(2);
+				});
+				$('#signup-btn').click(function () {
+					$('.carousel').carousel(3);
+				});
+				$('#signup-back-btn').click(function () {
+					$('.carousel').carousel(0);
+				});
+				$('#fake-reset-email-link').click(function () {
+					$('.carousel').carousel(5);
+				});
+			});
+		</script>     
+    
+  </body>
+</html>
